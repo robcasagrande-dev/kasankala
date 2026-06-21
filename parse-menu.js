@@ -14,15 +14,6 @@ try {
     const filtered = rows.filter(row => {
         let price = parseFloat(row['PrecioUnidad']);
         if (isNaN(price) || price <= 1000) return false;
-
-        let loCompro = String(row['Lo Compro'] || '').toLowerCase().trim();
-        let listaInv = String(row['Lista Inventario'] || '').toLowerCase().trim();
-
-        if (loCompro === 'si') {
-            if (!listaInv.includes('bar') && !listaInv.includes('bedidas') && !listaInv.includes('bebidas')) {
-                return false;
-            }
-        }
         return true;
     }).map(row => ({
         nombre: row['Nombre'],

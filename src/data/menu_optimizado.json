@@ -173,6 +173,11 @@
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
+        "nombre": "Ajiaco Con Pollo",
+        "precio": 20000,
+        "descripcion": "Corte seleccionado, preparado a fuego lento para garantizar la máxima jugosidad."
+      },
+      {
         "nombre": "Apererol Sprit",
         "precio": 35000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
@@ -273,6 +278,11 @@
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
+        "nombre": "Cuatro",
+        "precio": 5000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
         "nombre": "Cuba Libre",
         "precio": 40000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
@@ -290,6 +300,11 @@
       {
         "nombre": "Dulce De Coco Artesanal",
         "precio": 15000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
+        "nombre": "Electrolic",
+        "precio": 20000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
@@ -668,6 +683,16 @@
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
+        "nombre": "Soda 976",
+        "precio": 8000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
+        "nombre": "Soda Saborizada",
+        "precio": 20000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
         "nombre": "Tanqueray No. Ten Gin Chupito",
         "precio": 38000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
@@ -698,6 +723,11 @@
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
+        "nombre": "Tocineta Porcion",
+        "precio": 6000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
         "nombre": "Tom Collins",
         "precio": 38000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
@@ -710,6 +740,11 @@
       {
         "nombre": "Vegetales Orientales",
         "precio": 42000,
+        "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
+      },
+      {
+        "nombre": "Vegetales Salteados  Pequeãa",
+        "precio": 12000,
         "descripcion": "Una especialidad de la casa que combina texturas y sabores únicos."
       },
       {
@@ -840,6 +875,11 @@
       {
         "nombre": "Tarta De Chocolate",
         "precio": 24000,
+        "descripcion": "Un toque dulce perfecto para terminar la velada."
+      },
+      {
+        "nombre": "Tarta De Vainilla",
+        "precio": 17000,
         "descripcion": "Un toque dulce perfecto para terminar la velada."
       },
       {

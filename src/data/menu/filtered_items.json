@@ -438,6 +438,12 @@
     "lo_compro": "Si"
   },
   {
+    "nombre": "AJIACO CON POLLO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
+  },
+  {
     "nombre": "APEREROL SPRIT",
     "precio": 35000,
     "categoria_raw": "Ninguno",
@@ -630,6 +636,12 @@
     "lo_compro": "No"
   },
   {
+    "nombre": "CUATRO",
+    "precio": 5000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
+  },
+  {
     "nombre": "CUBA LIBRE",
     "precio": 40000,
     "categoria_raw": "Ninguno",
@@ -646,6 +658,12 @@
     "precio": 15000,
     "categoria_raw": "Ninguno",
     "lo_compro": "No"
+  },
+  {
+    "nombre": "ELECTROLIC",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
   },
   {
     "nombre": "ENSALADA PEQUEÑA",
@@ -1170,6 +1188,18 @@
     "lo_compro": "Si"
   },
   {
+    "nombre": "SODA 976",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "SODA SABORIZADA",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
+  },
+  {
     "nombre": "SOPA DE PESCADO ROBALO",
     "precio": 23000,
     "categoria_raw": "Ninguno",
@@ -1192,6 +1222,12 @@
     "precio": 38000,
     "categoria_raw": "Ninguno",
     "lo_compro": "No"
+  },
+  {
+    "nombre": "TARTA DE VAINILLA",
+    "precio": 17000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
   },
   {
     "nombre": "TEQUILA JOSE CUERVO BOTELLA 750ML",
@@ -1242,6 +1278,12 @@
     "lo_compro": "No"
   },
   {
+    "nombre": "TOCINETA PORCION",
+    "precio": 6000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
+  },
+  {
     "nombre": "TOM COLLINS",
     "precio": 38000,
     "categoria_raw": "Ninguno",
@@ -1252,6 +1294,12 @@
     "precio": 12000,
     "categoria_raw": "Ninguno",
     "lo_compro": "No"
+  },
+  {
+    "nombre": "VEGETALES SALTEADOS  PEQUEÃA",
+    "precio": 12000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "Si"
   },
   {
     "nombre": "VILLA MARIA PASION",
