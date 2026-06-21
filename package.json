@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.10.2"
+    "astro": "^4.10.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.7.0",

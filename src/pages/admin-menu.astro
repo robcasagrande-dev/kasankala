@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Kásankala | Menu Admin">
+	<main class="admin-page container">
+		
+        <!-- Modal Password -->
+        <div id="password-screen" class="password-screen animate-fade-in">
+            <div class="glass-box">
+                <h2>Area Riservata</h2>
+                <p>Inserisci la password per accedere allo strumento di gestione menu.</p>
+                <input type="password" id="password-input" placeholder="Password" />
+                <button id="login-btn" class="btn">Accedi</button>
+                <p id="error-msg" class="error-msg"></p>
+            </div>
+        </div>
+
+        <!-- Dashboard Nascosta -->
+        <div id="dashboard-screen" class="dashboard-screen hidden">
+            <h1 class="page-title">Gestione Menu Excel</h1>
+            <p class="page-subtitle">Carica il file Excel dei prodotti. Il sistema filtrerà automaticamente i piatti con prezzo superiore a 1000 pesos.</p>
+            
+            <div class="upload-area">
+                <input type="file" id="excel-file" accept=".xlsx, .xls, .csv" class="file-input" />
+                <label for="excel-file" class="btn btn-gold">Scegli File Excel</label>
+                <span id="file-name" class="file-name">Nessun file selezionato</span>
+            </div>
+
+            <div class="results-area">
+                <h3>Prodotti Filtrati (> 1000 pesos)</h3>
+                <p class="hint">Copia il testo qui sotto e incollalo all'AI per l'ottimizzazione.</p>
+                <textarea id="output-text" class="output-text" readonly placeholder="Il risultato apparirà qui..."></textarea>
+                <button id="copy-btn" class="btn btn-outline hidden">Copia Testo</button>
+            </div>
+        </div>
+
+	</main>
+</Layout>
+
+<!-- Script per leggere l'Excel lato client -->
+<script is:inline src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+        const passwordScreen = document.getElementById('password-screen');
+        const dashboardScreen = document.getElementById('dashboard-screen');
+        const passwordInput = document.getElementById('password-input');
+        const loginBtn = document.getElementById('login-btn');
+        const errorMsg = document.getElementById('error-msg');
+        
+        const fileInput = document.getElementById('excel-file');
+        const fileNameDisplay = document.getElementById('file-name');
+        const outputText = document.getElementById('output-text');
+        const copyBtn = document.getElementById('copy-btn');
+
+        // 1. Password Protection
+        const checkPassword = () => {
+            if (passwordInput.value === 'menu_kasankala**') {
+                passwordScreen.classList.add('hidden');
+                dashboardScreen.classList.remove('hidden');
+            } else {
+                errorMsg.textContent = 'Password errata.';
+            }
+        };
+
+        loginBtn.addEventListener('click', checkPassword);
+        passwordInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkPassword();
+        });
+
+        // 2. Excel Parsing and Filtering
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            fileNameDisplay.textContent = file.name;
+            outputText.value = "Elaborazione in corso...";
+
+            const reader = new FileReader();
+            reader.onload = (evt) => {
+                try {
+                    const data = evt.target.result;
+                    const workbook = XLSX.read(data, { type: 'binary' });
+                    
+                    // Prendi il primo foglio
+                    const firstSheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[firstSheetName];
+                    
+                    // Converti in JSON
+                    const rows = XLSX.utils.sheet_to_json(worksheet);
+                    
+                    let filteredProducts = [];
+                    let priceColumnKey = null;
+
+                    if(rows.length > 0) {
+                        // Cerca la colonna del prezzo (qualsiasi chiave che contiene 'prezzo', 'price' o 'cost')
+                        const keys = Object.keys(rows[0]);
+                        priceColumnKey = keys.find(k => k.toLowerCase().includes('prez') || k.toLowerCase().includes('pric') || k.toLowerCase().includes('vendita'));
+                        
+                        // Se non troviamo il nome, prendiamo l'ultima colonna numerica
+                        if(!priceColumnKey) {
+                            priceColumnKey = keys[keys.length - 1]; 
+                        }
+                    }
+
+                    rows.forEach(row => {
+                        // Tenta di estrarre il prezzo
+                        let priceVal = row[priceColumnKey];
+                        if (priceVal !== undefined && priceVal !== null) {
+                            // Rimuovi eventuali simboli di valuta o formattazione e converti in numero
+                            let numPrice = parseFloat(String(priceVal).replace(/[^0-9.-]+/g,""));
+                            if (!isNaN(numPrice) && numPrice > 1000) {
+                                filteredProducts.push(row);
+                            }
+                        }
+                    });
+
+                    // Formatta l'output per l'AI
+                    if (filteredProducts.length > 0) {
+                        let textOut = `TROVATI ${filteredProducts.length} PRODOTTI CON PREZZO > 1000:\n\n`;
+                        filteredProducts.forEach((p, index) => {
+                            textOut += `${index + 1}. `;
+                            for (const [key, value] of Object.entries(p)) {
+                                textOut += `[${key}: ${value}] `;
+                            }
+                            textOut += `\n`;
+                        });
+                        outputText.value = textOut;
+                        copyBtn.classList.remove('hidden');
+                    } else {
+                        outputText.value = "Nessun prodotto trovato con prezzo > 1000. Assicurati che la colonna del prezzo sia chiara nell'Excel.";
+                    }
+                    
+                } catch (err) {
+                    console.error(err);
+                    outputText.value = "Errore durante la lettura del file. Assicurati sia un Excel valido.";
+                }
+            };
+            reader.readAsBinaryString(file);
+        });
+
+        // 3. Copy to clipboard
+        copyBtn.addEventListener('click', () => {
+            outputText.select();
+            document.execCommand('copy');
+            copyBtn.textContent = 'Copiato!';
+            setTimeout(() => copyBtn.textContent = 'Copia Testo', 2000);
+        });
+    });
+</script>
+
+<style>
+	.admin-page {
+        padding-top: 150px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+	}
+
+    .hidden {
+        display: none !important;
+    }
+
+    .password-screen {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .glass-box {
+        background: rgba(15, 15, 15, 0.8);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        padding: var(--spacing-md);
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+    }
+
+    .glass-box h2 {
+        margin-bottom: var(--spacing-xs);
+    }
+    .glass-box p {
+        color: var(--color-gray);
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 0.8rem;
+        background: rgba(0,0,0,0.5);
+        border: 1px solid var(--color-gray);
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        font-family: var(--font-body);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.8rem;
+        background: var(--color-gold);
+        color: black;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .error-msg {
+        color: #ff4444 !important;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .dashboard-screen {
+        width: 100%;
+        max-width: 800px;
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+        color: var(--color-gray);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .upload-area {
+        background: rgba(15, 15, 15, 0.5);
+        border: 1px dashed var(--color-gold);
+        padding: var(--spacing-md);
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .file-input {
+        display: none;
+    }
+
+    .btn-gold {
+        display: inline-block;
+        width: auto;
+        padding: 0.8rem 2rem;
+    }
+
+    .file-name {
+        display: block;
+        margin-top: 1rem;
+        color: var(--color-gray);
+        font-size: 0.9rem;
+    }
+
+    .results-area {
+        margin-top: var(--spacing-md);
+    }
+    
+    .hint {
+        font-size: 0.85rem;
+        color: var(--color-gray);
+        margin-bottom: 0.5rem;
+    }
+
+    .output-text {
+        width: 100%;
+        height: 300px;
+        background: black;
+        border: 1px solid rgba(255,255,255,0.1);
+        color: #00ff00; /* Console like color */
+        padding: 1rem;
+        font-family: monospace;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        resize: vertical;
+    }
+
+    .btn-outline {
+        background: transparent;
+        color: var(--color-gold);
+        border: 1px solid var(--color-gold);
+    }
+    .btn-outline:hover {
+        background: var(--color-gold);
+        color: black;
+    }
+</style>
