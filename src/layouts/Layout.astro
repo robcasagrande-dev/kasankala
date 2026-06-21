@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Kásankala: L'incontro tra giungla e lusso nel cuore del Tayrona." />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body>
+        <header class="site-header">
+            <div class="container header-container">
+                <a href="/" class="logo-link">
+                    <span class="logo-text">KÁsankala</span>
+                </a>
+                <nav class="main-nav">
+                    <!-- Minimal navigation, can be expanded later -->
+                    <a href="#concept" class="nav-link">Essenza</a>
+                    <a href="#gallery" class="nav-link">Atmosfera</a>
+                </nav>
+            </div>
+        </header>
+
+		<slot />
+
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <p class="footer-text">&copy; {new Date().getFullYear()} Kásankala. Tutti i diritti riservati.</p>
+            </div>
+        </footer>
+	</body>
+</html>
+
+<style>
+    .site-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: var(--spacing-md) 0;
+        z-index: 100;
+        background: linear-gradient(to bottom, rgba(5,5,5,0.8) 0%, rgba(5,5,5,0) 100%);
+    }
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-text {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        color: var(--color-gold);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+    .main-nav {
+        display: flex;
+        gap: var(--spacing-md);
+    }
+    .nav-link {
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-white);
+        opacity: 0.8;
+    }
+    .nav-link:hover {
+        opacity: 1;
+        color: var(--color-gold);
+    }
+    .site-footer {
+        padding: var(--spacing-lg) 0;
+        text-align: center;
+        border-top: 1px solid rgba(212, 175, 55, 0.1); /* Subtle gold border */
+    }
+    .footer-text {
+        font-size: 0.8rem;
+        color: var(--color-gray);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+</style>
