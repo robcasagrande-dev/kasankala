@@ -2,36 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Kásankala | Menu Admin">
+<Layout title="Kásankala | Admin Menú">
 	<main class="admin-page container">
 		
         <!-- Modal Password -->
         <div id="password-screen" class="password-screen animate-fade-in">
             <div class="glass-box">
-                <h2>Area Riservata</h2>
-                <p>Inserisci la password per accedere allo strumento di gestione menu.</p>
-                <input type="password" id="password-input" placeholder="Password" />
-                <button id="login-btn" class="btn">Accedi</button>
+                <h2>Área Reservada</h2>
+                <p>Ingresa la contraseña para acceder a la herramienta de gestión del menú.</p>
+                <input type="password" id="password-input" placeholder="Contraseña" />
+                <button id="login-btn" class="btn">Ingresar</button>
                 <p id="error-msg" class="error-msg"></p>
             </div>
         </div>
 
         <!-- Dashboard Nascosta -->
         <div id="dashboard-screen" class="dashboard-screen hidden">
-            <h1 class="page-title">Gestione Menu Excel</h1>
-            <p class="page-subtitle">Carica il file Excel dei prodotti. Il sistema filtrerà automaticamente i piatti con prezzo superiore a 1000 pesos.</p>
+            <h1 class="page-title">Gestión de Menú Excel</h1>
+            <p class="page-subtitle">Sube el archivo Excel de productos. El sistema filtrará automáticamente los platos con precio superior a 1000 pesos.</p>
             
             <div class="upload-area">
                 <input type="file" id="excel-file" accept=".xlsx, .xls, .csv" class="file-input" />
-                <label for="excel-file" class="btn btn-gold">Scegli File Excel</label>
-                <span id="file-name" class="file-name">Nessun file selezionato</span>
+                <label for="excel-file" class="btn btn-gold">Elegir Archivo Excel</label>
+                <span id="file-name" class="file-name">Ningún archivo seleccionado</span>
             </div>
 
             <div class="results-area">
-                <h3>Prodotti Filtrati (> 1000 pesos)</h3>
-                <p class="hint">Copia il testo qui sotto e incollalo all'AI per l'ottimizzazione.</p>
-                <textarea id="output-text" class="output-text" readonly placeholder="Il risultato apparirà qui..."></textarea>
-                <button id="copy-btn" class="btn btn-outline hidden">Copia Testo</button>
+                <h3>Productos Filtrados (> 1000 pesos)</h3>
+                <p class="hint">Copia el texto a continuación y pégalo a la IA para su optimización.</p>
+                <textarea id="output-text" class="output-text" readonly placeholder="El resultado aparecerá aquí..."></textarea>
+                <button id="copy-btn" class="btn btn-outline hidden">Copiar Texto</button>
             </div>
         </div>
 
@@ -59,7 +59,7 @@ import Layout from '../layouts/Layout.astro';
                 passwordScreen.classList.add('hidden');
                 dashboardScreen.classList.remove('hidden');
             } else {
-                errorMsg.textContent = 'Password errata.';
+                errorMsg.textContent = 'Contraseña incorrecta.';
             }
         };
 
@@ -74,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
             if (!file) return;
             
             fileNameDisplay.textContent = file.name;
-            outputText.value = "Elaborazione in corso...";
+            outputText.value = "Procesando...";
 
             const reader = new FileReader();
             reader.onload = (evt) => {
@@ -95,7 +95,7 @@ import Layout from '../layouts/Layout.astro';
                     if(rows.length > 0) {
                         // Cerca la colonna del prezzo (qualsiasi chiave che contiene 'prezzo', 'price' o 'cost')
                         const keys = Object.keys(rows[0]);
-                        priceColumnKey = keys.find(k => k.toLowerCase().includes('prez') || k.toLowerCase().includes('pric') || k.toLowerCase().includes('vendita'));
+                        priceColumnKey = keys.find(k => k.toLowerCase().includes('prez') || k.toLowerCase().includes('pric') || k.toLowerCase().includes('vendita') || k.toLowerCase().includes('cost'));
                         
                         // Se non troviamo il nome, prendiamo l'ultima colonna numerica
                         if(!priceColumnKey) {
@@ -117,7 +117,7 @@ import Layout from '../layouts/Layout.astro';
 
                     // Formatta l'output per l'AI
                     if (filteredProducts.length > 0) {
-                        let textOut = `TROVATI ${filteredProducts.length} PRODOTTI CON PREZZO > 1000:\n\n`;
+                        let textOut = `ENCONTRADOS ${filteredProducts.length} PRODUCTOS CON PRECIO > 1000:\n\n`;
                         filteredProducts.forEach((p, index) => {
                             textOut += `${index + 1}. `;
                             for (const [key, value] of Object.entries(p)) {
@@ -128,12 +128,12 @@ import Layout from '../layouts/Layout.astro';
                         outputText.value = textOut;
                         copyBtn.classList.remove('hidden');
                     } else {
-                        outputText.value = "Nessun prodotto trovato con prezzo > 1000. Assicurati che la colonna del prezzo sia chiara nell'Excel.";
+                        outputText.value = "Ningún producto encontrado con precio > 1000. Asegúrate de que la columna de precio sea clara en el Excel.";
                     }
                     
                 } catch (err) {
                     console.error(err);
-                    outputText.value = "Errore durante la lettura del file. Assicurati sia un Excel valido.";
+                    outputText.value = "Error al leer el archivo. Asegúrate de que sea un Excel válido.";
                 }
             };
             reader.readAsBinaryString(file);
@@ -143,8 +143,8 @@ import Layout from '../layouts/Layout.astro';
         copyBtn.addEventListener('click', () => {
             outputText.select();
             document.execCommand('copy');
-            copyBtn.textContent = 'Copiato!';
-            setTimeout(() => copyBtn.textContent = 'Copia Testo', 2000);
+            copyBtn.textContent = '¡Copiado!';
+            setTimeout(() => copyBtn.textContent = 'Copiar Texto', 2000);
         });
     });
 </script>
