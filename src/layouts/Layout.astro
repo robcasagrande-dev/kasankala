@@ -25,7 +25,7 @@ const { title } = Astro.props;
         <header class="site-header">
             <div class="container header-container">
                 <a href="/" class="logo-link">
-                    <span class="logo-text">KÁsankala</span>
+                    <img src="/logo-color.svg" alt="Kásankala" class="site-logo" />
                 </a>
                 <nav class="main-nav">
                     <!-- Minimal navigation, can be expanded later -->
@@ -61,12 +61,9 @@ const { title } = Astro.props;
         justify-content: space-between;
         align-items: center;
     }
-    .logo-text {
-        font-family: var(--font-display);
-        font-size: 1.5rem;
-        color: var(--color-gold);
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
+    .site-logo {
+        height: 60px;
+        width: auto;
     }
     .main-nav {
         display: flex;
