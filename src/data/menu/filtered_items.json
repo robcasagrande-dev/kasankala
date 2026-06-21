@@ -1,0 +1,1412 @@
+[
+  {
+    "nombre": "10 PATACONES TAYRONA",
+    "precio": 18000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "11 EMPANADAS MIXTAS",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "12 CEVICHE DE PESCADO",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "13 CEVICHE VEGETARIANO DE MANGO Y PINA",
+    "precio": 28000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "14 COCKTAIL DE CAMARONES",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "15 CARPACCIO DE PULPO",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "16 BRUSCHETTA CAPRESE",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "17 HUMMUS DE GARBANZOS",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "18 BRUSCHETTA JAMON SERRANO",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "19 LANGOSTINOS  EN SALSA  ROCOTO",
+    "precio": 32000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "20 ENSALADA DE OTONO CON POLLO",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "21 ENSALADA DE QUINOA",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "22 ENSALADA GRIECA",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "23 CREMA DE AHUYAMA",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "30 PASTA DE MARISCOS",
+    "precio": 48000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "31 PASTA AL PESTO",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "32 PASTA ALFREDO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "33 PASTA CARBONARA",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "34 PASTA BOLONESA",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "40 PASTA CON VERDURAS",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "41 VEGETALES ORIENTALES",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "42 PIMIENTOS MORRONES",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "43 WOK DE VEGETALES CON CHIP DE PLATANO",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "44 HUMUS CON BERENJENAS",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "50 LOMO AL VINO",
+    "precio": 88000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "51 POLLO AL CURRY",
+    "precio": 54000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "52 MILANESA DE POLLO",
+    "precio": 54000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "53 PECHUGA A LA PLANCHA",
+    "precio": 48000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "54 LOMO SALTADO",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "55 COSTILLAS AL BARBEQUE",
+    "precio": 54000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "56 CHULETA DE TERNERA DEL CHEF",
+    "precio": 95000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "60 LANGOSTA AL GUSTO",
+    "precio": 180000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "62 PESCADO DEL DIA",
+    "precio": 68000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "63 ROBALO A LA MARINERA",
+    "precio": 80000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "64 ROBALO AL COCO",
+    "precio": 70000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "65 ARROZ DE MAR NEGRO",
+    "precio": 78000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "66 WOK DE MARISCOS CON CHIPS DE PLATANO",
+    "precio": 76000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "70 CHEESECAKE",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "71 TARTA DE BANANO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "72 TARTA DE CHOCOLATE",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "73 COPA DE HELADO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "74 VOLCAN DE CHOCOLATE",
+    "precio": 28000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "75 TARTA DE ZANAHORIA",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "76 PIE DE LIMON",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "80 SANDWICH POLLO",
+    "precio": 32000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "81 SANDWICH VEGETARIANO",
+    "precio": 26000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "82 SANDWICH JAMON Y QUESO",
+    "precio": 28000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "83 HAMBURGUESA TAYRONA",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "90 JUGO NATURAL ADICIONAL",
+    "precio": 12000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "91 AREPA DE HUEVO ADICIONAL",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "910 QUESO COSTENO ADICIONAL",
+    "precio": 7000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "911 PORCION FRUTAS ADICIONAL",
+    "precio": 10000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "912 ARROZ PORCION",
+    "precio": 5000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "912 GRANOLA ADICIONAL",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "92 DESAYUNO ADICIONAL COMPLETO",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "93 CAYEYE ADICIONAL",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "95 AREPA COLOMBIANA",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "96 HUEVO ADICIONAL",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "98 CALDO DE POLLO Y ARROZ",
+    "precio": 18000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "99 PAN ADICIONAL",
+    "precio": 5000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "999 BROCHETA VEGETARIANA",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ABSOLUT VODKA BOTELLA 700ML",
+    "precio": 190000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "ABSOLUT VODKA CHUPITO",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ACEITUNAS ADICION",
+    "precio": 5000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "AGUA COCO",
+    "precio": 10000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "AGUA CON GAS",
+    "precio": 6000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUA NATURAL 1L",
+    "precio": 8000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUA NATURAL 600ML",
+    "precio": 3000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUA TONICA CANADA DRY",
+    "precio": 6000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUARDIENTE ANTIOQUENO BOTELLA 750ML",
+    "precio": 135000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUARDIENTE ANTIOQUENO CHUPITO",
+    "precio": 18000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "AGUILA LIGHT",
+    "precio": 8000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "AGUILA NORMAL",
+    "precio": 8000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "APEREROL SPRIT",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ARROZ CREMOSO MARISCO 100 MIL",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ARROZ DE COCO  PORCION",
+    "precio": 6000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BATIDO DE FRUTAS",
+    "precio": 14000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BATIDO NATURAL",
+    "precio": 18000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BOLA DE HELADO X1",
+    "precio": 6000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BOWL DE FRUTAS",
+    "precio": 10000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BRANDY BONAPARTE BOTELLA 750ML",
+    "precio": 111100,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "BRANDY BONAPARTE CHUPITO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BUCHANANS TWO SOULS 12 A CHUPITO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "BUCHANANS TWO SOULS 12 ANOS WHISKY 750ML",
+    "precio": 480000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "CAFE HELADO",
+    "precio": 18000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CAIPIROSKA",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CAMARON ADICION",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CAZUELA DE MARISCOS",
+    "precio": 72000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CEVICHE DE PULPO Y CAMARON",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CHAMPAGNE VEUVE CLICQUOT BRUT YELLOW LABEL (FRANCI",
+    "precio": 780000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "CHISPS DE PLATANO",
+    "precio": 7000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CHUPITO CREMA DE WHISKY",
+    "precio": 30000,
+    "categoria_raw": "Bar",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CLUB COLOMBIA",
+    "precio": 8000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "COCA COLA 330ML",
+    "precio": 6000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "COCA COLA ZERO 330ML",
+    "precio": 5000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "COCO COLADA",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COCO GIN TONIC",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COCO LOCO",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COCTEL SIN ALCOHOL",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COMIDA DE PERSONAL",
+    "precio": 10000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COPA DE VINO MALBET FINCA LAS MORA",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COPA VINO BLANCO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "COPA VINO TINTO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CORONA",
+    "precio": 14000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "CROQUETAS DE CANGREJO",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "CUBA LIBRE",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "DAIQUIRI",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "DULCE DE COCO ARTESANAL",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ENSALADA PEQUEÑA",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "FLAN DE CANELA",
+    "precio": 17000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "GIN AND TONIC",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "GINEBRA MONKEY 47 DRY GIN BOTELLA 500ML",
+    "precio": 500000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "GINEBRA MONKEY 47 DRY GIN CHUPITO",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "GINGER ALE",
+    "precio": 6000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "GLENFIDDICH SINGLE MALT SCOTCH WHISKY CHUPITO",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "GLENFIDDICH SINGLE MALT WHISKY BOTELLA 750ML",
+    "precio": 550000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "GORDON GIN BOTELLA 700ML",
+    "precio": 190000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "GORDON GIN CHUPITO",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "GREY GOOSE VODKA BOTELLA 700ML",
+    "precio": 380000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "GREY GOOSE VODKA CHUPITO",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "HAPPY HOURS CUBA LIBRE",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "HAPPY HOURS GIN TONI",
+    "precio": 48000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "HAPPY HOURS MOJITO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "HATSU",
+    "precio": 9000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "JUGO NATURAL",
+    "precio": 14000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "KAIPIRIÑA",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "KOLA ROMAN",
+    "precio": 5000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "LANGOSTA 2 X 1  PEQUEÑA",
+    "precio": 200000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LANGOSTA X 2KG",
+    "precio": 250000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LILA BLUE",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LIMONADA",
+    "precio": 10000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LIMONADA CEREZA",
+    "precio": 12000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LIMONADA CON COCO",
+    "precio": 16000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "LIMONADA HIERBABUENA",
+    "precio": 12000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MANU PASTA 60000",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MARGARITA",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MARGARITA DE COCO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MARISCOS ADICIONAL",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 1",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 1 POLLO",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 2",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 2 MOJARRA",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 3 FILETE AL AJILLO",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 4  HAMBURGUESA 60000",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL 5 WOK 60000",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MENU ESPECIAL PASTA 6000",
+    "precio": 6000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MICHELADA CON SODA",
+    "precio": 8000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MILAGRO REPOSADO TEQUILA BOTELLA 700ML",
+    "precio": 360000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "MILAGRO REPOSADO TEQUILA CHUPITO",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MILAGRO SELECT RESERVE REPOSADO TEQUILA CHUPITO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MILAGRO SELECT RESERVE TEQUILA BOT 700ML",
+    "precio": 440000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "MOJITO",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "MOJITO DE COCO",
+    "precio": 42000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "NEGRONI",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "NUTELLA ADICIONAL",
+    "precio": 2500,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "OPCION MICHELADA",
+    "precio": 2000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PANCAKE ADICIONAL",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PAPAS FRANCESA ADICION",
+    "precio": 6000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA 100 MIL",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA 100 MIL PICADA",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA 70 MIL",
+    "precio": 70000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA PASTA ALFREDO",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA PECHUGA 100 MIL",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA PESCA DEL DIA  80 MIL",
+    "precio": 80000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PASADIA PESCADO 100 MIL",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PECHUGA ADICIONAL",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PIÑA COLADA",
+    "precio": 46000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PISCO SAWERS",
+    "precio": 45000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "POKER",
+    "precio": 8000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "POLLO AL CURRY EVEN TO 61 MIL",
+    "precio": 61000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PORCION DE PAPAS",
+    "precio": 7000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PROMO COCO LOCO X1",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "PROMO COCO LOCO X2",
+    "precio": 60000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "REMY MARTIN COGNAC BOTELLA 700ML",
+    "precio": 560000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "REMY MARTIN COGNAC CHUPITO",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ROBALO EVENTO 100 MIL",
+    "precio": 100000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "ROMPE OLAS",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON BLANCO VIEJO CALDAS CHUPITO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON MEDELLIN 3 ANOS BOTELLA 750ML",
+    "precio": 120000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "RON MEDELLIN 3 ANOS CHUPITO",
+    "precio": 20000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON MEDELLIN 5 ANOS BOTELLA 750ML",
+    "precio": 200000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "RON MEDELLIN 5 ANOS CHUPITO",
+    "precio": 24000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON MEDELLIN 8 ANOS CHUPITO",
+    "precio": 25000,
+    "categoria_raw": "Bar",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON VIEJO DE CALDAS 8 ANOS BOTELLA 750ML",
+    "precio": 250000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "RON VIEJO DE CALDAS 8 ANOS CHUPITO",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "RON ZACAPA BOTELLA 700ML",
+    "precio": 520000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "RON ZACAPA CHUPITO",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SANDWICH VIAJERO",
+    "precio": 16000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SAOCO CUBANO",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SELVA FRESH",
+    "precio": 40000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SERVICIO ALA HABITACION",
+    "precio": 70000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SERVICIO ALA PLAYA",
+    "precio": 80000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SHOP RON FLOR DE CAÑA",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SIERRA EN POSTA",
+    "precio": 51000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "SODA 400ML",
+    "precio": 6000,
+    "categoria_raw": "Bedidas",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "SOPA DE PESCADO ROBALO",
+    "precio": 23000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "STELLA ARTOIS",
+    "precio": 14000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "TANQUERAY NO. TEN GIN BOTELLA 750ML",
+    "precio": 480000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "TANQUERAY NO. TEN GIN CHUPITO",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "TEQUILA JOSE CUERVO BOTELLA 750ML",
+    "precio": 179200,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "TEQUILA JOSE CUERVO CHUPITO",
+    "precio": 25000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "THE BALVENIE SINGLE MALT SCOTCH WHISKY CHUPITO",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "THE BALVENIE SINGLE MALT WHISKY BOTELLA 750ML",
+    "precio": 670000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "THE BOTANIST ISLAY DRY GIN BOTELLA 700ML",
+    "precio": 450000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "THE BOTANIST ISLAY DRY GIN CHUPITO",
+    "precio": 35000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "TIBURON AZUL",
+    "precio": 50000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "TIRAMISU DE FRUTOS ROJO",
+    "precio": 19000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "TOM COLLINS",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "TOMATES APANADOS",
+    "precio": 12000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "VILLA MARIA PASION",
+    "precio": 46000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "VINO BLANCO DON SIMON SELECCION AIREN (ESPANA)",
+    "precio": 60000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO GATO NEGRO SEMI SWEET VARIETAL (CHILE)",
+    "precio": 90000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO LAS MORAS BARREL SEL CHARDONNAY (ARGEN",
+    "precio": 150000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO LAS MORAS CHARDONNAY (ARGENTINA)",
+    "precio": 130000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO LAS MORAS SAUVIGNON BLANC (ARGENTINA)",
+    "precio": 120000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO ROSALEDA SAUVIGNON BLANC (CHILE)",
+    "precio": 62000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO BLANCO SANTA CAROLINA CHARDONNAY (CHILE)",
+    "precio": 100000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO BRUT BARON DE ROTHBERG AIREN (FRANCI",
+    "precio": 100000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO CHANDON EXTRA BRUT (ARGENTINA)",
+    "precio": 135000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO CHANDON EXTRA BRUT ROSE (ARGENTINA)",
+    "precio": 145000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO JP CHENET DEMI SEC ICE BLANCO (FRANC",
+    "precio": 100000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO JP CHENET STRAWBERRY (FRANCIA)",
+    "precio": 120000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO ESPUMOSO PROSECCO PICCINI (ITALIA)",
+    "precio": 170000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO SANTA CAROLINA ROSE (CHILE)",
+    "precio": 100000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO 9 LIVES RESERVA CARMENERE (CHILE)",
+    "precio": 160000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO DADA 2 MERLOT (ARGENTINA)",
+    "precio": 140000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO LAS MORAS MALBEC (ARGENTINA)",
+    "precio": 130000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO LAS MORAS SELECT BARREL  MALBEC (ARGENTINO)",
+    "precio": 170000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO NAVARRO CORREAS PRIVADA BLEND (ARGENTIN",
+    "precio": 180000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO ROSALEDA MERLOT (CHILE)",
+    "precio": 62000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VINO TINTO YELLOW TAIL SHIRAZ (AUSTRALIA)",
+    "precio": 110000,
+    "categoria_raw": "Bar",
+    "lo_compro": "Si"
+  },
+  {
+    "nombre": "VODKA TONIC",
+    "precio": 38000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "WAFLES ADICIONAL",
+    "precio": 15000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "WOK POLLO EJECUTIVO",
+    "precio": 30000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  },
+  {
+    "nombre": "WOK VEGETALES 61",
+    "precio": 61000,
+    "categoria_raw": "Ninguno",
+    "lo_compro": "No"
+  }
+]
