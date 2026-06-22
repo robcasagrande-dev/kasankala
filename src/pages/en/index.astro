@@ -1,0 +1,265 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Kásankala | The ancestral flavor of Tayrona">
+	<main>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-overlay"></div>
+			<div class="container hero-content">
+				<p class="subtitle animate-fade-in">Opening Soon</p>
+				<h1 class="title animate-slide-up">KÁsankala</h1>
+				<p class="tagline animate-fade-in-delayed">Where the jungle meets the soul.</p>
+			</div>
+		</section>
+
+		<!-- Concept Section -->
+		<section id="concept" class="concept-section">
+			<div class="container concept-container">
+				<h2 class="section-title">The Essence</h2>
+				<p class="concept-text">
+					<span class="highlight">Kásankala</span> is born from the ancient Kogi language: <em>Ká</em>, meaning jungle, and <em>Sankala</em>, the beach where the sea breaks. A word that captures the pure essence of our home: the jungle beach.
+					<br><br>
+					More than a restaurant, it is a sanctuary in Vereda Orinoco, the exact point where the forest vegetation embraces the coastal sand. A culinary experience sculpted by ancient wisdom, where every flavor pays tribute to the deep connection between the mountain and the sea.
+				</p>
+			</div>
+		</section>
+
+		<!-- Atmosfera / Gallery Section -->
+		<section id="gallery" class="gallery-section">
+			<div class="container">
+				<h2 class="section-title text-center">Atmosphere</h2>
+				<div class="gallery-grid">
+					<div class="gallery-item tall">
+						<img src="/images/jeyson becerra-04789.JPG" alt="Kásankala Atmosphere 1" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item wide">
+						<img src="/images/WhatsApp Image 2023-12-31 at 10.38.14-EDIT.jpg" alt="Kásankala Atmosphere 2" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<img src="/images/jeyson becerra-04914~4.JPG" alt="Kásankala Atmosphere 3" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<img src="/images/jeyson becerra-01351~2.JPG" alt="Kásankala Atmosphere 4" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item wide">
+						<img src="/images/jeyson becerra-04829.JPG" alt="Kásankala Atmosphere 5" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item tall">
+						<img src="/images/WhatsApp Image 2023-12-31 at 10.37.09-EDIT.jpg" alt="Kásankala Atmosphere 6" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<img src="/images/PXL_20250509_000455186~4.jpg" alt="Kásankala Atmosphere 7" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item wide">
+						<img src="/images/PXL_20250517_235602952~3.jpg" alt="Kásankala Atmosphere 8" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item tall">
+						<img src="/images/WhatsApp Image 2023-12-31 at 10.37.48-EDIT.jpg" alt="Kásankala Atmosphere 9" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<img src="/images/WhatsApp Image 2023-12-31 at 10.39.16-EDIT.jpg" alt="Kásankala Atmosphere 10" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item wide">
+						<img src="/images/jeyson becerra-04679~2.JPG" alt="Kásankala Atmosphere 11" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+					<div class="gallery-item tall">
+						<img src="/images/jeyson becerra-04957~2.JPG" alt="Kásankala Atmosphere 12" loading="lazy">
+						<div class="gallery-overlay"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	/* Hero Section */
+	.hero {
+		position: relative;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+		/* Base background image set in global.css to avoid repetition, 
+		   but can be overridden here if needed */
+		background-image: url('/images/hero-bg.jpg'); /* The real image */
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(5, 5, 5, 0.6); /* Dark overlay for text readability */
+		z-index: 1;
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 2;
+	}
+
+	.title {
+		font-size: clamp(4rem, 10vw, 8rem);
+		color: var(--color-gold);
+		margin-bottom: var(--spacing-sm);
+		text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	}
+
+	.subtitle {
+		font-family: var(--font-body);
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		color: var(--color-white);
+		margin-bottom: var(--spacing-md);
+	}
+
+	.tagline {
+		font-size: 1.5rem;
+		color: var(--color-gray);
+		font-style: italic;
+	}
+
+	/* Concept Section */
+	.concept-section {
+		padding: var(--spacing-xxl) 0;
+		background-color: var(--color-bg);
+		text-align: center;
+	}
+
+	.concept-container {
+		max-width: 800px;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		color: var(--color-gold);
+		margin-bottom: var(--spacing-lg);
+	}
+
+	.concept-text {
+		font-size: 1.2rem;
+		line-height: 1.8;
+		color: var(--color-gray);
+	}
+
+	.concept-text .highlight {
+		color: var(--color-gold);
+		font-weight: 600;
+		font-size: 1.3rem;
+	}
+
+	/* Animations */
+	@keyframes fadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	@keyframes slideUp {
+		from { 
+			opacity: 0; 
+			transform: translateY(40px);
+		}
+		to { 
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.animate-fade-in {
+		animation: fadeIn 1.5s ease-out forwards;
+	}
+
+	.animate-slide-up {
+		animation: slideUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+		opacity: 0; /* Starts hidden */
+		animation-delay: 0.3s;
+	}
+
+	.animate-fade-in-delayed {
+		animation: fadeIn 1.5s ease-out forwards;
+		opacity: 0;
+		animation-delay: 1s;
+	}
+
+	/* Gallery Section */
+	.gallery-section {
+		padding: var(--spacing-xxl) 0;
+		background-color: #050505; /* Slightly darker than base bg for contrast */
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-auto-rows: 250px;
+		grid-auto-flow: dense;
+		gap: 15px;
+		padding: 0 var(--spacing-md);
+	}
+
+	.gallery-item {
+		position: relative;
+		overflow: hidden;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.gallery-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.5s ease;
+	}
+
+	.gallery-item:hover img {
+		transform: scale(1.05);
+	}
+
+	.gallery-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(212, 175, 55, 0);
+		transition: background 0.3s ease;
+		pointer-events: none;
+	}
+
+	.gallery-item:hover .gallery-overlay {
+		background: rgba(212, 175, 55, 0.15); /* Subtle gold tint on hover */
+	}
+
+	/* Masonry effect classes */
+	@media (min-width: 768px) {
+		.gallery-item.wide {
+			grid-column: span 2;
+		}
+		.gallery-item.tall {
+			grid-row: span 2;
+		}
+	}
+</style>

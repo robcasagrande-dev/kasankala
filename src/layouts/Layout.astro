@@ -6,10 +6,12 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+const lang = Astro.currentLocale || 'es';
+const isEn = lang === 'en';
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -29,10 +31,15 @@ const { title } = Astro.props;
                 </a>
                 <nav class="main-nav">
                     <!-- Minimal navigation, can be expanded later -->
-                    <a href="/#concept" class="nav-link">Esencia</a>
-                    <a href="/#gallery" class="nav-link">Atmósfera</a>
-                    <a href="/menu" class="nav-link">Menú</a>
+                    <a href={isEn ? '/en/#concept' : '/#concept'} class="nav-link">{isEn ? 'Essence' : 'Esencia'}</a>
+                    <a href={isEn ? '/en/#gallery' : '/#gallery'} class="nav-link">{isEn ? 'Atmosphere' : 'Atmósfera'}</a>
+                    <a href={isEn ? '/en/menu' : '/menu'} class="nav-link">{isEn ? 'Menu' : 'Menú'}</a>
                 </nav>
+                <div class="lang-switcher">
+                    <a href="/" class={!isEn ? 'active' : ''}>ES</a>
+                    <span>|</span>
+                    <a href="/en/" class={isEn ? 'active' : ''}>EN</a>
+                </div>
             </div>
         </header>
 
@@ -40,7 +47,7 @@ const { title } = Astro.props;
 
         <footer class="site-footer">
             <div class="container footer-container">
-                <p class="footer-text">&copy; {new Date().getFullYear()} Kásankala. Todos los derechos reservados.</p>
+                <p class="footer-text">&copy; {new Date().getFullYear()} Kásankala. {isEn ? 'All rights reserved.' : 'Todos los derechos reservados.'}</p>
             </div>
         </footer>
 	</body>
@@ -60,6 +67,7 @@ const { title } = Astro.props;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
     }
     .site-logo {
         height: 120px;
@@ -80,6 +88,27 @@ const { title } = Astro.props;
     .nav-link:hover {
         opacity: 1;
         color: var(--color-gold);
+    }
+    .lang-switcher {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: var(--color-white);
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+    }
+    .lang-switcher a {
+        color: var(--color-gray);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .lang-switcher a.active, .lang-switcher a:hover {
+        color: var(--color-gold);
+    }
+    .lang-switcher span {
+        color: var(--color-gray);
+        opacity: 0.5;
     }
     .site-footer {
         padding: var(--spacing-lg) 0;
