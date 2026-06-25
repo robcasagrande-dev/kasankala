@@ -9,8 +9,8 @@ export interface Props {
 
 const { 
     title, 
-    description = "Kásankala: El encuentro entre la selva y el lujo en el corazón del Parque Tayrona.", 
-    keywords = "restaurante, Parque Tayrona, Vereda Orinoco, gastronomía, Caribe, selva, Kásankala, Santa Marta" 
+    description = "Kásankala — fine dining restaurant in the heart of Parque Tayrona, Vereda Orinoco, near Santa Marta, Colombia. Jungle cuisine meets the Caribbean Sea.", 
+    keywords = "fine dining Parque Tayrona, restaurante Tayrona, restaurant Parque Tayrona, Kásankala, Vereda Orinoco, Santa Marta restaurant, jungle restaurant Colombia, gastronomía Caribe, selva Tayrona, luxury restaurant Colombia"
 } = Astro.props;
 const lang = Astro.currentLocale || 'es';
 const isEn = lang === 'en';
@@ -21,6 +21,19 @@ const isEs = lang === 'es';
 
 // Compute nav prefix for each locale
 const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : isIt ? '/it' : '';
+
+// Canonical & OG URL
+const siteBase = 'https://kasankala.com';
+const canonicalURL = new URL(Astro.url.pathname, siteBase).toString();
+
+// hreflang alternates
+const hreflangMap = {
+  es: siteBase + Astro.url.pathname.replace(/^\/(en|de|fr|it)(\/|$)/, '/'),
+  en: siteBase + '/en' + (Astro.url.pathname.replace(/^\/(en|de|fr|it)/, '') || '/'),
+  de: siteBase + '/de' + (Astro.url.pathname.replace(/^\/(en|de|fr|it)/, '') || '/'),
+  fr: siteBase + '/fr' + (Astro.url.pathname.replace(/^\/(en|de|fr|it)/, '') || '/'),
+  it: siteBase + '/it' + (Astro.url.pathname.replace(/^\/(en|de|fr|it)/, '') || '/'),
+};
 ---
 
 <!DOCTYPE html>
@@ -32,20 +45,63 @@ const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : isIt ? '/it' : ''
 		<meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
+
+        <!-- Canonical -->
+        <link rel="canonical" href={canonicalURL} />
+
+        <!-- hreflang: tell Google all language versions of this page -->
+        <link rel="alternate" hreflang="es" href={hreflangMap.es} />
+        <link rel="alternate" hreflang="en" href={hreflangMap.en} />
+        <link rel="alternate" hreflang="de" href={hreflangMap.de} />
+        <link rel="alternate" hreflang="fr" href={hreflangMap.fr} />
+        <link rel="alternate" hreflang="it" href={hreflangMap.it} />
+        <link rel="alternate" hreflang="x-default" href={hreflangMap.es} />
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kasankala.com/" />
+        <meta property="og:url" content={canonicalURL} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content="https://kasankala.com/images/hero-bg.jpg" />
+        <meta property="og:locale" content={lang} />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://kasankala.com/" />
+        <meta property="twitter:url" content={canonicalURL} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content="https://kasankala.com/images/hero-bg.jpg" />
+
+        <!-- Schema.org: Restaurant structured data for Google rich results -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Kásankala",
+          "description": "Fine dining restaurant in the jungle of Parque Tayrona, Vereda Orinoco, Colombia. Where the jungle meets the Caribbean Sea.",
+          "url": "https://kasankala.com",
+          "image": "https://kasankala.com/images/hero-bg.jpg",
+          "logo": "https://kasankala.com/logo-color.svg",
+          "servesCuisine": ["Colombian", "Caribbean", "Mediterranean", "Seafood"],
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Vereda Orinoco, Parque Nacional Natural Tayrona",
+            "addressLocality": "Santa Marta",
+            "addressRegion": "Magdalena",
+            "addressCountry": "CO"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 11.3478,
+            "longitude": -73.9981
+          },
+          "hasMap": "https://maps.google.com/?q=Vereda+Orinoco+Parque+Tayrona",
+          "sameAs": [
+            "https://kasankala.com"
+          ],
+          "inLanguage": ["es", "en", "de", "fr", "it"]
+        })} />
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
