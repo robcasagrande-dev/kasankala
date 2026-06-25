@@ -27,6 +27,7 @@ html {
   background-color: var(--color-black);
   color: var(--color-white);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,6 +37,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,13 +67,19 @@ a:hover {
   padding: 0 var(--spacing-md);
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 /* Utilities */
 .text-gold {
   color: var(--color-gold);
 }
 
 .text-center {
-  text-center: center;
+  text-align: center;
 }
 
 .uppercase {

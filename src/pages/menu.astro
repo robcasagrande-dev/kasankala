@@ -156,4 +156,49 @@ const formatPrice = (price) => {
         animation-delay: 0.3s;
         opacity: 0;
     }
+
+    @media (max-width: 768px) {
+        .menu-page {
+            padding-top: 90px;
+        }
+        .menu-header {
+            padding: var(--spacing-lg) 0 var(--spacing-md);
+        }
+        .page-title {
+            font-size: 2.5rem;
+        }
+        .page-subtitle {
+            font-size: 0.95rem;
+            padding: 0 var(--spacing-sm);
+        }
+        .menu-content {
+            padding: var(--spacing-lg) var(--spacing-sm);
+        }
+        .menu-category {
+            margin-bottom: var(--spacing-lg);
+        }
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+        .menu-item {
+            transform: none !important; /* disable horizontal slide on mobile */
+            padding: 0.25rem 0;
+        }
+        .item-header {
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        .item-name {
+            font-size: 1rem;
+            padding-right: 0.5rem;
+        }
+        .item-price {
+            font-size: 1rem;
+        }
+        .item-desc {
+            max-width: 100%;
+            font-size: 0.9rem;
+        }
+    }
 </style>
