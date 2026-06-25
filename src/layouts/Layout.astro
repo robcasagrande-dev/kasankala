@@ -16,10 +16,11 @@ const lang = Astro.currentLocale || 'es';
 const isEn = lang === 'en';
 const isDe = lang === 'de';
 const isFr = lang === 'fr';
+const isIt = lang === 'it';
 const isEs = lang === 'es';
 
 // Compute nav prefix for each locale
-const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
+const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : isIt ? '/it' : '';
 ---
 
 <!DOCTYPE html>
@@ -58,9 +59,9 @@ const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
                 </a>
                 <nav class="main-nav">
                     <!-- Minimal navigation, can be expanded later -->
-                    <a href={`${navPrefix}/#concept`} class="nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : 'Esencia'}</a>
-                    <a href={`${navPrefix}/#gallery`} class="nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : 'Atmósfera'}</a>
-                    <a href={`${navPrefix}/menu`} class="nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : 'Menú'}</a>
+                    <a href={`${navPrefix}/#concept`} class="nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : isIt ? 'Essenza' : 'Esencia'}</a>
+                    <a href={`${navPrefix}/#gallery`} class="nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : isIt ? 'Atmosfera' : 'Atmósfera'}</a>
+                    <a href={`${navPrefix}/menu`} class="nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : isIt ? 'Menu' : 'Menú'}</a>
                 </nav>
                 <div class="lang-switcher">
                     <a href="/" class={isEs ? 'active' : ''}>ES</a>
@@ -70,6 +71,8 @@ const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
                     <a href="/de/" class={isDe ? 'active' : ''}>DE</a>
                     <span>|</span>
                     <a href="/fr/" class={isFr ? 'active' : ''}>FR</a>
+                    <span>|</span>
+                    <a href="/it/" class={isIt ? 'active' : ''}>IT</a>
                 </div>
                 <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
@@ -82,9 +85,9 @@ const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="mobile-menu-overlay">
             <nav class="mobile-nav">
-                <a href={`${navPrefix}/#concept`} class="mobile-nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : 'Esencia'}</a>
-                <a href={`${navPrefix}/#gallery`} class="mobile-nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : 'Atmósfera'}</a>
-                <a href={`${navPrefix}/menu`} class="mobile-nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : 'Menú'}</a>
+                <a href={`${navPrefix}/#concept`} class="mobile-nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : isIt ? 'Essenza' : 'Esencia'}</a>
+                <a href={`${navPrefix}/#gallery`} class="mobile-nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : isIt ? 'Atmosfera' : 'Atmósfera'}</a>
+                <a href={`${navPrefix}/menu`} class="mobile-nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : isIt ? 'Menu' : 'Menú'}</a>
                 
                 <div class="mobile-lang-switcher">
                     <a href="/" class={isEs ? 'active' : ''}>ES</a>
@@ -94,6 +97,8 @@ const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
                     <a href="/de/" class={isDe ? 'active' : ''}>DE</a>
                     <span>|</span>
                     <a href="/fr/" class={isFr ? 'active' : ''}>FR</a>
+                    <span>|</span>
+                    <a href="/it/" class={isIt ? 'active' : ''}>IT</a>
                 </div>
             </nav>
         </div>
