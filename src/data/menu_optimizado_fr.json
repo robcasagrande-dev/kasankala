@@ -1,0 +1,1257 @@
+[
+  {
+    "categoria": "Entrées",
+    "items": [
+      {
+        "nombre": "Bruschetta Caprese",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Bruschetta Jamon Serrano",
+        "precio": 30000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Carpaccio De Pulpo",
+        "precio": 35000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Ceviche De Pescado",
+        "precio": 42000,
+        "descripcion": "Fresh and vibrant, perfectly marinated with citrus and local spices."
+      },
+      {
+        "nombre": "Ceviche De Pulpo Y Camaron",
+        "precio": 35000,
+        "descripcion": "Fresh and vibrant, perfectly marinated with citrus and local spices."
+      },
+      {
+        "nombre": "Ceviche Vegetariano De Mango Y Pina",
+        "precio": 28000,
+        "descripcion": "Fresh and vibrant, perfectly marinated with citrus and local spices."
+      },
+      {
+        "nombre": "Crema De Ahuyama",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Empanadas Mixtas",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Hummus De Garbanzos",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pasadia 100 Mil Picada",
+        "precio": 100000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Patacones Tayrona",
+        "precio": 18000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      }
+    ]
+  },
+  {
+    "categoria": "Salades",
+    "items": [
+      {
+        "nombre": "Ensalada De Otono Con Pollo",
+        "precio": 38000,
+        "descripcion": "Mélange de feuilles fraîches, légumes croquants et vinaigrette maison."
+      },
+      {
+        "nombre": "Ensalada De Quinoa",
+        "precio": 35000,
+        "descripcion": "Mélange de feuilles fraîches, légumes croquants et vinaigrette maison."
+      },
+      {
+        "nombre": "Ensalada Grieca",
+        "precio": 35000,
+        "descripcion": "Mélange de feuilles fraîches, légumes croquants et vinaigrette maison."
+      },
+      {
+        "nombre": "Ensalada Pequeña",
+        "precio": 8000,
+        "descripcion": "Mélange de feuilles fraîches, légumes croquants et vinaigrette maison."
+      }
+    ]
+  },
+  {
+    "categoria": "Pâtes & Riz",
+    "items": [
+      {
+        "nombre": "Arroz Cremoso Marisco 100 Mil",
+        "precio": 100000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Arroz De Coco  Porcion",
+        "precio": 6000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Arroz De Mar Negro",
+        "precio": 78000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Arroz Porcion",
+        "precio": 5000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Caldo De Pollo Y Arroz",
+        "precio": 18000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Manu Pasta 60000",
+        "precio": 60000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Menu Especial Pasta 6000",
+        "precio": 6000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasadia Pasta Alfredo",
+        "precio": 100000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta Al Pesto",
+        "precio": 38000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta Alfredo",
+        "precio": 40000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta Bolonesa",
+        "precio": 40000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta Carbonara",
+        "precio": 42000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta Con Verduras",
+        "precio": 42000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      },
+      {
+        "nombre": "Pasta De Mariscos",
+        "precio": 48000,
+        "descripcion": "Recette traditionnelle avec une touche d'innovation, cuite à la perfection."
+      }
+    ]
+  },
+  {
+    "categoria": "Plats Principaux",
+    "items": [
+      {
+        "nombre": "Absolut Vodka Chupito",
+        "precio": 24000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Aceitunas Adicion",
+        "precio": 5000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ajiaco Con Pollo",
+        "precio": 20000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Apererol Sprit",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Arepa Colombiana",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Arepa De Huevo Adicional",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Batido De Frutas",
+        "precio": 14000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Batido Natural",
+        "precio": 18000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Bowl De Frutas",
+        "precio": 10000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Brandy Bonaparte Chupito",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Brocheta Vegetariana",
+        "precio": 30000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Buchanans Two Souls 12 A Chupito",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Caipiroska",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Camaron Adicion",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Cayeye Adicional",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Chisps De Platano",
+        "precio": 7000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Chuleta De Ternera Del Chef",
+        "precio": 95000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Coco Colada",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Coco Gin Tonic",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Coco Loco",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Comida De Personal",
+        "precio": 10000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Costillas Al Barbeque",
+        "precio": 54000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Croquetas De Cangrejo",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Cuatro",
+        "precio": 5000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Cuba Libre",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Daiquiri",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Desayuno Adicional Completo",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Dulce De Coco Artesanal",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Electrolic",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Flan De Canela",
+        "precio": 17000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Gin And Tonic",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ginebra Monkey 47 Dry Gin Chupito",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Glenfiddich Single Malt Scotch Whisky Chupito",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Gordon Gin Chupito",
+        "precio": 24000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Granola Adicional",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Grey Goose Vodka Chupito",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Hamburguesa Tayrona",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Happy Hours Cuba Libre",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Happy Hours Gin Toni",
+        "precio": 48000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Happy Hours Mojito",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Huevo Adicional",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Humus Con Berenjenas",
+        "precio": 42000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Kaipiriña",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Langostinos  En Salsa  Rocoto",
+        "precio": 32000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Lila Blue",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Limonada",
+        "precio": 10000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Limonada Cereza",
+        "precio": 12000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Limonada Con Coco",
+        "precio": 16000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Limonada Hierbabuena",
+        "precio": 12000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Lomo Saltado",
+        "precio": 60000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Margarita",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Margarita De Coco",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 1",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 1 Pollo",
+        "precio": 60000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Menu Especial 2",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 2 Mojarra",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 3 Filete Al Ajillo",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 4  Hamburguesa 60000",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Menu Especial 5 Wok 60000",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Michelada Con Soda",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Milagro Reposado Tequila Chupito",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Milagro Select Reserve Reposado Tequila Chupito",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Milanesa De Pollo",
+        "precio": 54000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Mojito",
+        "precio": 42000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Mojito De Coco",
+        "precio": 42000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Negroni",
+        "precio": 30000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Nutella Adicional",
+        "precio": 2500,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Opcion Michelada",
+        "precio": 2000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pan Adicional",
+        "precio": 5000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pancake Adicional",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Papas Francesa Adicion",
+        "precio": 6000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pasadia 100 Mil",
+        "precio": 100000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pasadia 70 Mil",
+        "precio": 70000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pasadia Pechuga 100 Mil",
+        "precio": 100000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pasadia Pesca Del Dia  80 Mil",
+        "precio": 80000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pechuga A La Plancha",
+        "precio": 48000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pechuga Adicional",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pimientos Morrones",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Piña Colada",
+        "precio": 46000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pisco Sawers",
+        "precio": 45000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Pollo Al Curry",
+        "precio": 54000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Pollo Al Curry Even To 61 Mil",
+        "precio": 61000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Porcion De Papas",
+        "precio": 7000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Porcion Frutas Adicional",
+        "precio": 10000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Promo Coco Loco X1",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Promo Coco Loco X2",
+        "precio": 60000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Queso Costeno Adicional",
+        "precio": 7000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Remy Martin Cognac Chupito",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Rompe Olas",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Blanco Viejo Caldas Chupito",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Medellin 3 Anos Chupito",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Medellin 5 Anos Chupito",
+        "precio": 24000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Viejo De Caldas 8 Anos Chupito",
+        "precio": 30000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Zacapa Chupito",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Sandwich Jamon Y Queso",
+        "precio": 28000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Sandwich Pollo",
+        "precio": 32000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Sandwich Vegetariano",
+        "precio": 26000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Sandwich Viajero",
+        "precio": 16000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Saoco Cubano",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Selva Fresh",
+        "precio": 40000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Servicio Ala Habitacion",
+        "precio": 70000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Servicio Ala Playa",
+        "precio": 80000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Shop Ron Flor De Caña",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Sierra En Posta",
+        "precio": 51000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Soda 976",
+        "precio": 8000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Soda Saborizada",
+        "precio": 20000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tanqueray No. Ten Gin Chupito",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tequila Jose Cuervo Chupito",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "The Balvenie Single Malt Scotch Whisky Chupito",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "The Botanist Islay Dry Gin Chupito",
+        "precio": 35000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tiburon Azul",
+        "precio": 50000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tiramisu De Frutos Rojo",
+        "precio": 19000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tocineta Porcion",
+        "precio": 6000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tom Collins",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tomates Apanados",
+        "precio": 12000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Vegetales Orientales",
+        "precio": 42000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Vegetales Salteados  Pequeãa",
+        "precio": 12000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Villa Maria Pasion",
+        "precio": 46000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Vodka Tonic",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Wafles Adicional",
+        "precio": 15000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Wok De Vegetales Con Chip De Platano",
+        "precio": 38000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Wok Pollo Ejecutivo",
+        "precio": 30000,
+        "descripcion": "Coupe sélectionnée, mijotée lentement pour garantir un moelleux maximal."
+      },
+      {
+        "nombre": "Wok Vegetales 61",
+        "precio": 61000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      }
+    ]
+  },
+  {
+    "categoria": "Fruits de Mer",
+    "items": [
+      {
+        "nombre": "Cazuela De Mariscos",
+        "precio": 72000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Langosta 2 X 1  Pequeña",
+        "precio": 200000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Langosta Al Gusto",
+        "precio": 180000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Langosta X 2kg",
+        "precio": 250000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Mariscos Adicional",
+        "precio": 25000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Pasadia Pescado 100 Mil",
+        "precio": 100000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Pescado Del Dia",
+        "precio": 68000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Robalo A La Marinera",
+        "precio": 80000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Robalo Al Coco",
+        "precio": 70000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Robalo Evento 100 Mil",
+        "precio": 100000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Sopa De Pescado Robalo",
+        "precio": 23000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      },
+      {
+        "nombre": "Wok De Mariscos Con Chips De Platano",
+        "precio": 76000,
+        "descripcion": "Pêche fraîche du jour, mettant en valeur les saveurs authentiques de la mer des Caraïbes."
+      }
+    ]
+  },
+  {
+    "categoria": "Desserts",
+    "items": [
+      {
+        "nombre": "Bola De Helado X1",
+        "precio": 6000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Cheesecake",
+        "precio": 24000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Copa De Helado",
+        "precio": 20000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Pie De Limon",
+        "precio": 20000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Tarta De Banano",
+        "precio": 20000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Tarta De Chocolate",
+        "precio": 24000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Tarta De Vainilla",
+        "precio": 17000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Tarta De Zanahoria",
+        "precio": 24000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      },
+      {
+        "nombre": "Volcan De Chocolate",
+        "precio": 28000,
+        "descripcion": "Une touche sucrée parfaite pour clore la soirée."
+      }
+    ]
+  },
+  {
+    "categoria": "Boissons & Cocktails",
+    "items": [
+      {
+        "nombre": "Agua Coco",
+        "precio": 10000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Agua Con Gas",
+        "precio": 6000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Agua Natural 1l",
+        "precio": 8000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Agua Natural 600ml",
+        "precio": 3000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Agua Tonica Canada Dry",
+        "precio": 6000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Aguila Light",
+        "precio": 8000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Aguila Normal",
+        "precio": 8000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Buchanans Two Souls 12 Anos Whisky 750ml",
+        "precio": 480000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Cafe Helado",
+        "precio": 18000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Champagne Veuve Clicquot Brut Yellow Label (franci",
+        "precio": 780000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Club Colombia",
+        "precio": 8000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Coca Cola 330ml",
+        "precio": 6000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Coca Cola Zero 330ml",
+        "precio": 5000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Cocktail De Camarones",
+        "precio": 42000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Coctel Sin Alcohol",
+        "precio": 25000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Copa De Vino Malbet Finca Las Mora",
+        "precio": 30000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Copa Vino Blanco",
+        "precio": 20000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Copa Vino Tinto",
+        "precio": 20000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Corona",
+        "precio": 14000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Ginger Ale",
+        "precio": 6000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Hatsu",
+        "precio": 9000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Jugo Natural",
+        "precio": 14000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Jugo Natural Adicional",
+        "precio": 12000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Kola Roman",
+        "precio": 5000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Lomo Al Vino",
+        "precio": 88000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Milagro Select Reserve Tequila Bot 700ml",
+        "precio": 440000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Poker",
+        "precio": 8000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Soda 400ml",
+        "precio": 6000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Stella Artois",
+        "precio": 14000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Don Simon Seleccion Airen (espana)",
+        "precio": 60000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Gato Negro Semi Sweet Varietal (chile)",
+        "precio": 90000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Las Moras Barrel Sel Chardonnay (argen",
+        "precio": 150000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Las Moras Chardonnay (argentina)",
+        "precio": 130000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Las Moras Sauvignon Blanc (argentina)",
+        "precio": 120000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Rosaleda Sauvignon Blanc (chile)",
+        "precio": 62000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Blanco Santa Carolina Chardonnay (chile)",
+        "precio": 100000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Brut Baron De Rothberg Airen (franci",
+        "precio": 100000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Chandon Extra Brut (argentina)",
+        "precio": 135000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Chandon Extra Brut Rose (argentina)",
+        "precio": 145000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Jp Chenet Demi Sec Ice Blanco (franc",
+        "precio": 100000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Jp Chenet Strawberry (francia)",
+        "precio": 120000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Espumoso Prosecco Piccini (italia)",
+        "precio": 170000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Santa Carolina Rose (chile)",
+        "precio": 100000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto 9 Lives Reserva Carmenere (chile)",
+        "precio": 160000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Dada 2 Merlot (argentina)",
+        "precio": 140000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Las Moras Malbec (argentina)",
+        "precio": 130000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Las Moras Select Barrel  Malbec (argentino)",
+        "precio": 170000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Navarro Correas Privada Blend (argentin",
+        "precio": 180000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Rosaleda Merlot (chile)",
+        "precio": 62000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      },
+      {
+        "nombre": "Vino Tinto Yellow Tail Shiraz (australia)",
+        "precio": 110000,
+        "descripcion": "Rafraîchissant et préparé à la minute avec les meilleurs ingrédients."
+      }
+    ]
+  },
+  {
+    "categoria": "Spiritueux",
+    "items": [
+      {
+        "nombre": "Absolut Vodka Botella 700ml",
+        "precio": 190000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Aguardiente Antioqueno Botella 750ml",
+        "precio": 135000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Aguardiente Antioqueno Chupito",
+        "precio": 18000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Brandy Bonaparte Botella 750ml",
+        "precio": 111100,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Chupito Crema De Whisky",
+        "precio": 30000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ginebra Monkey 47 Dry Gin Botella 500ml",
+        "precio": 500000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Glenfiddich Single Malt Whisky Botella 750ml",
+        "precio": 550000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Gordon Gin Botella 700ml",
+        "precio": 190000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Grey Goose Vodka Botella 700ml",
+        "precio": 380000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Milagro Reposado Tequila Botella 700ml",
+        "precio": 360000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Remy Martin Cognac Botella 700ml",
+        "precio": 560000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Medellin 3 Anos Botella 750ml",
+        "precio": 120000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Medellin 5 Anos Botella 750ml",
+        "precio": 200000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Medellin 8 Anos Chupito",
+        "precio": 25000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Viejo De Caldas 8 Anos Botella 750ml",
+        "precio": 250000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Ron Zacapa Botella 700ml",
+        "precio": 520000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tanqueray No. Ten Gin Botella 750ml",
+        "precio": 480000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "Tequila Jose Cuervo Botella 750ml",
+        "precio": 179200,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "The Balvenie Single Malt Whisky Botella 750ml",
+        "precio": 670000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      },
+      {
+        "nombre": "The Botanist Islay Dry Gin Botella 700ml",
+        "precio": 450000,
+        "descripcion": "Une spécialité maison qui marie textures et saveurs uniques."
+      }
+    ]
+  }
+]

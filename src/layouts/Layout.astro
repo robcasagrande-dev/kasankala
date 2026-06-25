@@ -14,6 +14,12 @@ const {
 } = Astro.props;
 const lang = Astro.currentLocale || 'es';
 const isEn = lang === 'en';
+const isDe = lang === 'de';
+const isFr = lang === 'fr';
+const isEs = lang === 'es';
+
+// Compute nav prefix for each locale
+const navPrefix = isEn ? '/en' : isDe ? '/de' : isFr ? '/fr' : '';
 ---
 
 <!DOCTYPE html>
@@ -52,14 +58,18 @@ const isEn = lang === 'en';
                 </a>
                 <nav class="main-nav">
                     <!-- Minimal navigation, can be expanded later -->
-                    <a href={isEn ? '/en/#concept' : '/#concept'} class="nav-link">{isEn ? 'Essence' : 'Esencia'}</a>
-                    <a href={isEn ? '/en/#gallery' : '/#gallery'} class="nav-link">{isEn ? 'Atmosphere' : 'Atmósfera'}</a>
-                    <a href={isEn ? '/en/menu' : '/menu'} class="nav-link">{isEn ? 'Menu' : 'Menú'}</a>
+                    <a href={`${navPrefix}/#concept`} class="nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : 'Esencia'}</a>
+                    <a href={`${navPrefix}/#gallery`} class="nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : 'Atmósfera'}</a>
+                    <a href={`${navPrefix}/menu`} class="nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : 'Menú'}</a>
                 </nav>
                 <div class="lang-switcher">
-                    <a href="/" class={!isEn ? 'active' : ''}>ES</a>
+                    <a href="/" class={isEs ? 'active' : ''}>ES</a>
                     <span>|</span>
                     <a href="/en/" class={isEn ? 'active' : ''}>EN</a>
+                    <span>|</span>
+                    <a href="/de/" class={isDe ? 'active' : ''}>DE</a>
+                    <span>|</span>
+                    <a href="/fr/" class={isFr ? 'active' : ''}>FR</a>
                 </div>
                 <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
@@ -72,14 +82,18 @@ const isEn = lang === 'en';
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="mobile-menu-overlay">
             <nav class="mobile-nav">
-                <a href={isEn ? '/en/#concept' : '/#concept'} class="mobile-nav-link">{isEn ? 'Essence' : 'Esencia'}</a>
-                <a href={isEn ? '/en/#gallery' : '/#gallery'} class="mobile-nav-link">{isEn ? 'Atmosphere' : 'Atmósfera'}</a>
-                <a href={isEn ? '/en/menu' : '/menu'} class="mobile-nav-link">{isEn ? 'Menu' : 'Menú'}</a>
+                <a href={`${navPrefix}/#concept`} class="mobile-nav-link">{isEn ? 'Essence' : isDe ? 'Essenz' : isFr ? 'Essence' : 'Esencia'}</a>
+                <a href={`${navPrefix}/#gallery`} class="mobile-nav-link">{isEn ? 'Atmosphere' : isDe ? 'Atmosphäre' : isFr ? 'Atmosphère' : 'Atmósfera'}</a>
+                <a href={`${navPrefix}/menu`} class="mobile-nav-link">{isEn ? 'Menu' : isDe ? 'Menü' : isFr ? 'Menu' : 'Menú'}</a>
                 
                 <div class="mobile-lang-switcher">
-                    <a href="/" class={!isEn ? 'active' : ''}>ES</a>
+                    <a href="/" class={isEs ? 'active' : ''}>ES</a>
                     <span>|</span>
                     <a href="/en/" class={isEn ? 'active' : ''}>EN</a>
+                    <span>|</span>
+                    <a href="/de/" class={isDe ? 'active' : ''}>DE</a>
+                    <span>|</span>
+                    <a href="/fr/" class={isFr ? 'active' : ''}>FR</a>
                 </div>
             </nav>
         </div>
