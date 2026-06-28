@@ -30,6 +30,19 @@ import Layout from '../layouts/Layout.astro';
             </div>
 		</section>
 
+		<!-- Menu Section -->
+		<section id="menu" class="menu-section container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2rem;">Il Nostro Menu</h2>
+            <div class="menu-iframe-wrapper">
+                <iframe 
+                    src="https://api.kalihotels.com/menu/" 
+                    width="100%" 
+                    height="800px" 
+                    title="Kasankala Menu">
+                </iframe>
+            </div>
+		</section>
+
 	</main>
 </Layout>
 
@@ -124,6 +137,25 @@ import Layout from '../layouts/Layout.astro';
     }
     .concept-image-wrapper:hover .concept-image {
         transform: scale(1.03);
+    }
+
+    /* Menu Section */
+    .menu-section {
+        padding: var(--spacing-xxl) var(--spacing-md);
+    }
+    .menu-iframe-wrapper {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(11, 15, 25, 0.5);
+    }
+    .menu-iframe-wrapper iframe {
+        border: none;
+        display: block;
     }
 
     @media (max-width: 768px) {
