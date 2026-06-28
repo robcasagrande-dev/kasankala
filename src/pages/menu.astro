@@ -7,324 +7,39 @@ import Layout from '../layouts/Layout.astro';
 	description="Explora el menú de Kásankala, un viaje culinario entre sabores ancestrales y técnicas modernas en el corazón del Parque Tayrona."
 >
 	<main class="menu-page">
-		<section class="menu-header animate-fade-in">
-            <div class="container">
-                <h1 class="page-title">El Menú</h1>
-                <p class="page-subtitle">Un viaje culinario entre sabores ancestrales y técnicas modernas.</p>
-            </div>
-		</section>
-
-		<section class="menu-content container animate-slide-up" id="dynamicMenuContainer">
-            <div style="text-align: center; padding: 4rem; color: var(--color-gold);">
-                Cargando el menú...
-            </div>
-		</section>
+		<iframe 
+            src="https://api.kalihotels.com/menu/" 
+            class="menu-iframe"
+            title="Menú Kásankala"
+            frameborder="0"
+        ></iframe>
 	</main>
 </Layout>
 
-<script>
-    document.addEventListener('DOMContentLoaded', async () => {
-        const container = document.getElementById('dynamicMenuContainer');
-        if (!container) return;
-        
-        try {
-            const res = await fetch('https://api.kalihotels.com/api/menu');
-            if (!res.ok) throw new Error('Network error');
-            const data = await res.json();
-            
-            if (!data.items || data.items.length === 0) {
-                container.innerHTML = '<div style="text-align:center; padding: 4rem; color: var(--color-gold);">Menú no disponible.</div>';
-                return;
-            }
-
-            function cleanName(name) {
-                if (!name) return '';
-                let cleaned = name.replace(/^\d+\s+/, '').trim();
-                return cleaned.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
-            }
-
-            function generateDescription(name, category) {
-                name = name.toLowerCase();
-                if(category === "Postres") return "Un toque dulce perfecto para terminar la velada.";
-                if(category === "Bebidas y Cócteles" || category === "Licores") return "Refrescante y preparado al momento con los mejores ingredientes.";
-                if(name.includes('ceviche')) return "Fresco y vibrante, marinado a la perfección con cítricos y especias locales.";
-                if(name.includes('ensalada')) return "Mezcla de hojas frescas, vegetales crujientes y un aderezo de la casa.";
-                if(name.includes('pasta') || name.includes('arroz') || name.includes('risotto')) return "Receta tradicional con un toque de innovación, cocinada en su punto exacto.";
-                if(name.includes('pescado') || name.includes('mariscos') || name.includes('pulpo') || name.includes('langosta') || name.includes('robalo')) return "Captura fresca del día, resaltando los sabores auténticos del mar Caribe.";
-                if(name.includes('lomo') || name.includes('pollo') || name.includes('costillas') || name.includes('chuleta')) return "Corte seleccionado, preparado a fuego lento para garantizar la máxima jugosidad.";
-                return "Una especialidad de la casa que combina texturas y sabores únicos.";
-            }
-
-            const grouped = {
-                "Entradas": [],
-                "Ensaladas": [],
-                "Pastas y Arroces": [],
-                "Platos Fuertes": [],
-                "Del Mar": [],
-                "Postres": [],
-                "Bebidas y Cócteles": [],
-                "Licores": []
-            };
-
-            data.items.forEach(item => {
-                let name = cleanName(item.nombre);
-                let nameLower = name.toLowerCase();
-                let inv = item.categoria ? item.categoria.toLowerCase() : '';
-                
-                let cat = "Platos Fuertes";
-
-                if (inv.includes('bar') || inv.includes('bedidas') || inv.includes('bebidas') || nameLower.includes('cerveza') || nameLower.includes('vino') || nameLower.includes('coctel') || nameLower.includes('cocktail') || nameLower.includes('agua') || nameLower.includes('jugo') || nameLower.includes('cafe')) {
-                    if(nameLower.includes('botella') || nameLower.includes('chupito')) {
-                        cat = "Licores";
-                    } else {
-                        cat = "Bebidas y Cócteles";
-                    }
-                } else if (nameLower.includes('postre') || nameLower.includes('tarta') || nameLower.includes('cheesecake') || nameLower.includes('helado') || nameLower.includes('volcan') || nameLower.includes('pie')) {
-                    cat = "Postres";
-                } else if (nameLower.includes('ensalada')) {
-                    cat = "Ensaladas";
-                } else if (nameLower.includes('pasta') || nameLower.includes('arroz') || nameLower.includes('risotto')) {
-                    cat = "Pastas y Arroces";
-                } else if (nameLower.includes('ceviche') || nameLower.includes('patacones') || nameLower.includes('empanadas') || nameLower.includes('carpaccio') || nameLower.includes('bruschetta') || nameLower.includes('hummus') || nameLower.includes('crema') || nameLower.includes('picada')) {
-                    cat = "Entradas";
-                } else if (nameLower.includes('pescado') || nameLower.includes('robalo') || nameLower.includes('pulpo') || nameLower.includes('langosta') || nameLower.includes('mariscos')) {
-                    cat = "Del Mar";
-                } else if (nameLower.includes('lomo') || nameLower.includes('pollo') || nameLower.includes('costillas') || nameLower.includes('chuleta') || nameLower.includes('hamburguesa')) {
-                    cat = "Platos Fuertes";
-                }
-
-                if (!grouped[cat]) grouped[cat] = [];
-                grouped[cat].push({
-                    nombre: name,
-                    precio: item.precio,
-                    descripcion: generateDescription(name, cat)
-                });
-            });
-
-            container.innerHTML = '';
-            
-            const formatPrice = (price) => {
-                const numPrice = parseFloat(price);
-                if (numPrice === 10) {
-                    return 'Opción de Desayuno';
-                }
-                if (!isNaN(numPrice)) {
-                    return new Intl.NumberFormat('es-CO', {
-                        style: 'currency',
-                        currency: 'COP',
-                        minimumFractionDigits: 0
-                    }).format(numPrice);
-                }
-                return price;
-            };
-
-            Object.keys(grouped).forEach((categoria, index) => {
-                if (grouped[categoria].length === 0) return;
-                
-                grouped[categoria].sort((a,b) => a.nombre.localeCompare(b.nombre));
-
-                const catDiv = document.createElement('div');
-                catDiv.className = 'menu-category';
-                catDiv.style.animationDelay = `${0.2 * index}s`;
-                catDiv.style.animation = 'fadeIn 1s ease-out forwards';
-                
-                const catTitle = document.createElement('h2');
-                catTitle.className = 'category-title';
-                catTitle.textContent = categoria;
-                catDiv.appendChild(catTitle);
-                
-                grouped[categoria].forEach(item => {
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'menu-item';
-                    
-                    const headerDiv = document.createElement('div');
-                    headerDiv.className = 'item-header';
-                    
-                    const nameH3 = document.createElement('h3');
-                    nameH3.className = 'item-name';
-                    nameH3.textContent = item.nombre;
-                    
-                    const priceSpan = document.createElement('span');
-                    priceSpan.className = 'item-price';
-                    priceSpan.textContent = formatPrice(item.precio);
-                    
-                    headerDiv.appendChild(nameH3);
-                    headerDiv.appendChild(priceSpan);
-                    itemDiv.appendChild(headerDiv);
-
-                    const descP = document.createElement('p');
-                    descP.className = 'item-desc';
-                    descP.textContent = item.descripcion;
-                    itemDiv.appendChild(descP);
-                    
-                    catDiv.appendChild(itemDiv);
-                });
-                
-                container.appendChild(catDiv);
-            });
-            
-        } catch (e) {
-            console.error(e);
-            container.innerHTML = '<div style="text-align:center; color: red;">Error al cargar el menú.</div>';
-        }
-    });
-</script>
-
 <style>
 	.menu-page {
-        padding-top: 120px;
+        /* We remove the padding-top so the iframe takes full screen or adjust to nav */
+        padding-top: 80px;
         min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 	}
     
-    .menu-header {
-        text-align: center;
-        padding: var(--spacing-xl) 0 var(--spacing-lg);
-        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-    }
-    
-    .page-title {
-        font-size: 4rem;
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .page-subtitle {
-        font-size: 1.1rem;
-        color: var(--color-gray);
-        max-width: 600px;
-        margin: 0 auto;
-        font-weight: 300;
-        letter-spacing: 0.05em;
-    }
-
-    .menu-content {
-        max-width: 800px;
-        padding: var(--spacing-xl) var(--spacing-md);
-    }
-
-    .menu-category {
-        margin-bottom: var(--spacing-xl);
-        animation: fadeIn 1s ease-out forwards;
-        opacity: 0;
-    }
-
-    .category-title {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        margin-bottom: var(--spacing-md);
-        text-align: center;
-        color: var(--color-white);
-        border-bottom: 1px dashed rgba(212, 175, 55, 0.3);
-        padding-bottom: 0.5rem;
-        display: inline-block;
+    .menu-iframe {
+        flex: 1;
         width: 100%;
-    }
-
-    .menu-item {
-        margin-bottom: var(--spacing-md);
-        transition: transform 0.3s;
-    }
-    
-    .menu-item:hover {
-        transform: translateX(10px);
-    }
-
-    .item-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 0.25rem;
-        border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
-    }
-
-    .item-name {
-        font-family: var(--font-body);
-        font-size: 1.2rem;
-        color: var(--color-gold);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        padding-right: 1rem;
-    }
-
-    .item-price {
-        font-family: var(--font-display);
-        font-size: 1.2rem;
-        color: var(--color-white);
-        white-space: nowrap;
-    }
-
-    .item-desc {
-        color: var(--color-gray);
-        font-size: 0.95rem;
-        font-weight: 300;
-        max-width: 85%;
-        margin-top: 0.25rem;
-    }
-
-    @keyframes slideUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    .animate-slide-up {
-        animation: slideUp 1s ease-out forwards;
-        animation-delay: 0.3s;
-        opacity: 0;
+        min-height: calc(100vh - 80px);
+        border: none;
+        background-color: transparent;
     }
 
     @media (max-width: 768px) {
         .menu-page {
-            padding-top: 90px;
+            padding-top: 60px;
         }
-        .menu-header {
-            padding: var(--spacing-lg) 0 var(--spacing-md);
-        }
-        .page-title {
-            font-size: 2.5rem;
-        }
-        .page-subtitle {
-            font-size: 0.95rem;
-            padding: 0 var(--spacing-sm);
-        }
-        .menu-content {
-            padding: var(--spacing-lg) var(--spacing-sm);
-        }
-        .menu-category {
-            margin-bottom: var(--spacing-lg);
-        }
-        .category-title {
-            font-size: 1.5rem;
-            margin-bottom: var(--spacing-md);
-        }
-        .menu-item {
-            transform: none !important; /* disable horizontal slide on mobile */
-            padding: 0.25rem 0;
-        }
-        .item-header {
-            flex-wrap: wrap;
-            gap: 0.25rem;
-        }
-        .item-name {
-            font-size: 1rem;
-            padding-right: 0.5rem;
-        }
-        .item-price {
-            font-size: 1rem;
-        }
-        .item-desc {
-            max-width: 100%;
-            font-size: 0.9rem;
+        .menu-iframe {
+            min-height: calc(100vh - 60px);
         }
     }
 </style>
