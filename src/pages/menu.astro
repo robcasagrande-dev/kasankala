@@ -1,15 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import menuData from '../data/menu_optimizado.json';
-
-// Formattatore di valuta colombiano (COP)
-const formatPrice = (price) => {
-    return new Intl.NumberFormat('es-CO', {
-        style: 'currency',
-        currency: 'COP',
-        minimumFractionDigits: 0
-    }).format(price);
-};
 ---
 
 <Layout 
@@ -24,25 +14,91 @@ const formatPrice = (price) => {
             </div>
 		</section>
 
-		<section class="menu-content container animate-slide-up">
-            {menuData.map((categoryData, index) => (
-                <div class="menu-category" style={`animation-delay: ${0.2 * index}s;`}>
-                    <h2 class="category-title">{categoryData.categoria}</h2>
-                    
-                    {categoryData.items.map((item) => (
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h3 class="item-name">{item.nombre}</h3>
-                                <span class="item-price">{formatPrice(item.precio)}</span>
-                            </div>
-                            <p class="item-desc">{item.descripcion}</p>
-                        </div>
-                    ))}
-                </div>
-            ))}
+		<section class="menu-content container animate-slide-up" id="dynamicMenuContainer">
+            <div style="text-align: center; padding: 4rem; color: var(--color-gold);">
+                Cargando el menú...
+            </div>
 		</section>
 	</main>
 </Layout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const container = document.getElementById('dynamicMenuContainer');
+        if (!container) return;
+        
+        try {
+            const res = await fetch('https://api.kalihotels.com/api/menu');
+            if (!res.ok) throw new Error('Network error');
+            const data = await res.json();
+            
+            if (!data.items || data.items.length === 0) {
+                container.innerHTML = '<div style="text-align:center; padding: 4rem; color: var(--color-gold);">Menú no disponible.</div>';
+                return;
+            }
+
+            const grouped = {};
+            data.items.forEach(item => {
+                const cat = item.categoria || 'Otros';
+                if (!grouped[cat]) grouped[cat] = [];
+                grouped[cat].push(item);
+            });
+
+            container.innerHTML = '';
+            
+            const formatPrice = (price) => {
+                const numPrice = parseFloat(price);
+                if (!isNaN(numPrice)) {
+                    return new Intl.NumberFormat('es-CO', {
+                        style: 'currency',
+                        currency: 'COP',
+                        minimumFractionDigits: 0
+                    }).format(numPrice);
+                }
+                return price;
+            };
+
+            Object.keys(grouped).forEach((categoria, index) => {
+                const catDiv = document.createElement('div');
+                catDiv.className = 'menu-category';
+                catDiv.style.animationDelay = `${0.2 * index}s`;
+                catDiv.style.animation = 'fadeIn 1s ease-out forwards';
+                
+                const catTitle = document.createElement('h2');
+                catTitle.className = 'category-title';
+                catTitle.textContent = categoria;
+                catDiv.appendChild(catTitle);
+                
+                grouped[categoria].forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'menu-item';
+                    
+                    const headerDiv = document.createElement('div');
+                    headerDiv.className = 'item-header';
+                    
+                    const nameH3 = document.createElement('h3');
+                    nameH3.className = 'item-name';
+                    nameH3.textContent = item.nombre;
+                    
+                    const priceSpan = document.createElement('span');
+                    priceSpan.className = 'item-price';
+                    priceSpan.textContent = formatPrice(item.precio);
+                    
+                    headerDiv.appendChild(nameH3);
+                    headerDiv.appendChild(priceSpan);
+                    itemDiv.appendChild(headerDiv);
+                    
+                    catDiv.appendChild(itemDiv);
+                });
+                
+                container.appendChild(catDiv);
+            });
+            
+        } catch (e) {
+            container.innerHTML = '<div style="text-align:center; color: red;">Error al cargar el menú.</div>';
+        }
+    });
+</script>
 
 <style>
 	.menu-page {
