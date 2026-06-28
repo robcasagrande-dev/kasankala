@@ -37,17 +37,77 @@ import Layout from '../layouts/Layout.astro';
                 return;
             }
 
-            const grouped = {};
+            function cleanName(name) {
+                if (!name) return '';
+                let cleaned = name.replace(/^\d+\s+/, '').trim();
+                return cleaned.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
+            }
+
+            function generateDescription(name, category) {
+                name = name.toLowerCase();
+                if(category === "Postres") return "Un toque dulce perfecto para terminar la velada.";
+                if(category === "Bebidas y Cócteles" || category === "Licores") return "Refrescante y preparado al momento con los mejores ingredientes.";
+                if(name.includes('ceviche')) return "Fresco y vibrante, marinado a la perfección con cítricos y especias locales.";
+                if(name.includes('ensalada')) return "Mezcla de hojas frescas, vegetales crujientes y un aderezo de la casa.";
+                if(name.includes('pasta') || name.includes('arroz') || name.includes('risotto')) return "Receta tradicional con un toque de innovación, cocinada en su punto exacto.";
+                if(name.includes('pescado') || name.includes('mariscos') || name.includes('pulpo') || name.includes('langosta') || name.includes('robalo')) return "Captura fresca del día, resaltando los sabores auténticos del mar Caribe.";
+                if(name.includes('lomo') || name.includes('pollo') || name.includes('costillas') || name.includes('chuleta')) return "Corte seleccionado, preparado a fuego lento para garantizar la máxima jugosidad.";
+                return "Una especialidad de la casa que combina texturas y sabores únicos.";
+            }
+
+            const grouped = {
+                "Entradas": [],
+                "Ensaladas": [],
+                "Pastas y Arroces": [],
+                "Platos Fuertes": [],
+                "Del Mar": [],
+                "Postres": [],
+                "Bebidas y Cócteles": [],
+                "Licores": []
+            };
+
             data.items.forEach(item => {
-                const cat = item.categoria || 'Otros';
+                let name = cleanName(item.nombre);
+                let nameLower = name.toLowerCase();
+                let inv = item.categoria ? item.categoria.toLowerCase() : '';
+                
+                let cat = "Platos Fuertes";
+
+                if (inv.includes('bar') || inv.includes('bedidas') || inv.includes('bebidas') || nameLower.includes('cerveza') || nameLower.includes('vino') || nameLower.includes('coctel') || nameLower.includes('cocktail') || nameLower.includes('agua') || nameLower.includes('jugo') || nameLower.includes('cafe')) {
+                    if(nameLower.includes('botella') || nameLower.includes('chupito')) {
+                        cat = "Licores";
+                    } else {
+                        cat = "Bebidas y Cócteles";
+                    }
+                } else if (nameLower.includes('postre') || nameLower.includes('tarta') || nameLower.includes('cheesecake') || nameLower.includes('helado') || nameLower.includes('volcan') || nameLower.includes('pie')) {
+                    cat = "Postres";
+                } else if (nameLower.includes('ensalada')) {
+                    cat = "Ensaladas";
+                } else if (nameLower.includes('pasta') || nameLower.includes('arroz') || nameLower.includes('risotto')) {
+                    cat = "Pastas y Arroces";
+                } else if (nameLower.includes('ceviche') || nameLower.includes('patacones') || nameLower.includes('empanadas') || nameLower.includes('carpaccio') || nameLower.includes('bruschetta') || nameLower.includes('hummus') || nameLower.includes('crema') || nameLower.includes('picada')) {
+                    cat = "Entradas";
+                } else if (nameLower.includes('pescado') || nameLower.includes('robalo') || nameLower.includes('pulpo') || nameLower.includes('langosta') || nameLower.includes('mariscos')) {
+                    cat = "Del Mar";
+                } else if (nameLower.includes('lomo') || nameLower.includes('pollo') || nameLower.includes('costillas') || nameLower.includes('chuleta') || nameLower.includes('hamburguesa')) {
+                    cat = "Platos Fuertes";
+                }
+
                 if (!grouped[cat]) grouped[cat] = [];
-                grouped[cat].push(item);
+                grouped[cat].push({
+                    nombre: name,
+                    precio: item.precio,
+                    descripcion: generateDescription(name, cat)
+                });
             });
 
             container.innerHTML = '';
             
             const formatPrice = (price) => {
                 const numPrice = parseFloat(price);
+                if (numPrice === 10) {
+                    return 'Opción de Desayuno';
+                }
                 if (!isNaN(numPrice)) {
                     return new Intl.NumberFormat('es-CO', {
                         style: 'currency',
@@ -59,6 +119,10 @@ import Layout from '../layouts/Layout.astro';
             };
 
             Object.keys(grouped).forEach((categoria, index) => {
+                if (grouped[categoria].length === 0) return;
+                
+                grouped[categoria].sort((a,b) => a.nombre.localeCompare(b.nombre));
+
                 const catDiv = document.createElement('div');
                 catDiv.className = 'menu-category';
                 catDiv.style.animationDelay = `${0.2 * index}s`;
@@ -87,6 +151,11 @@ import Layout from '../layouts/Layout.astro';
                     headerDiv.appendChild(nameH3);
                     headerDiv.appendChild(priceSpan);
                     itemDiv.appendChild(headerDiv);
+
+                    const descP = document.createElement('p');
+                    descP.className = 'item-desc';
+                    descP.textContent = item.descripcion;
+                    itemDiv.appendChild(descP);
                     
                     catDiv.appendChild(itemDiv);
                 });
@@ -95,6 +164,7 @@ import Layout from '../layouts/Layout.astro';
             });
             
         } catch (e) {
+            console.error(e);
             container.innerHTML = '<div style="text-align:center; color: red;">Error al cargar el menú.</div>';
         }
     });
